@@ -5,7 +5,7 @@ var botonEncriptar = document.getElementById("botonEncriptar");
 var botonDesencriptar = document.getElementById("botonDesencriptar");
 var botonCopiar = document.getElementById("botonCopiar");
 var botonBorrarAT = document.getElementById("botonBorrarAT");
-var botonBorrarR = document.getElementsByName("botonBorrarR");
+var botonBorrarR = document.getElementById("botonBorrarR");
 // -----------------------
 
 //Funciones Encriptar y Desencriptar
@@ -36,4 +36,14 @@ botonDesencriptar.addEventListener("click", function(){
 botonBorrarAT.addEventListener("click", function(){
     areaTexto.value = "";
     areaTexto.focus(); //regresamos el focus al area de texto para seguir ecribiendo
+});
+
+botonBorrarR.addEventListener("click", function(){
+    areaResultado.value = "";
+});
+
+botonCopiar.addEventListener("click", function(){
+    let textoCopiar = areaResultado.value; //Obetemos el valor ahora del area de resultados
+    navigator.clipboard.writeText(textoCopiar); //Copiamos el contenido de la variable al portapapeles
+    alert("El texto se ha copiado al portapapeles"); // lanzamos una alerta al usuario para informarle
 });
