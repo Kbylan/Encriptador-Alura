@@ -13,8 +13,11 @@ function encriptar(textoUsuario){
 
 function desencriptar(textoEncriptado){
     let textoDesencriptado = textoEncriptado.replace(/enter/g,"e").replace(/imes/g,"i").replace(/ai/g,"a").replace(/ober/g,"o").replace(/ufat/g,"u");
-    console.log(textoDesencriptado);
     return textoDesencriptado;
 }
 
-desencriptar(encriptar("perro caballo dragon animal"));
+botonEncriptar.addEventListener("click", function(){
+    let textoUsuario = areaTexto.value;
+    let textoEncriptado = encriptar(textoUsuario);
+    areaResultado.value = textoEncriptado; 
+});
