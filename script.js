@@ -8,8 +8,13 @@ var botonBorrarR = document.getElementsByName("botonBorrarR");
 
 function encriptar(textoUsuario){
     let textoEncriptado = textoUsuario.replace(/e/g,"enter").replace(/i/g,"imes").replace(/a/g,"ai").replace(/o/g,"ober").replace(/u/g,"ufat");
-    console.log(textoEncriptado)
     return textoEncriptado; 
 }
 
-encriptar("dragon perro caballo animal abuelo");
+function desencriptar(textoEncriptado){
+    let textoDesencriptado = textoEncriptado.replace(/enter/g,"e").replace(/imes/g,"i").replace(/ai/g,"a").replace(/ober/g,"o").replace(/ufat/g,"u");
+    console.log(textoDesencriptado);
+    return textoDesencriptado;
+}
+
+desencriptar(encriptar("perro caballo dragon animal"));
