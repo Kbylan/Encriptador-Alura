@@ -45,5 +45,11 @@ botonBorrarR.addEventListener("click", function(){
 botonCopiar.addEventListener("click", function(){
     let textoCopiar = areaResultado.value; //Obetemos el valor ahora del area de resultados
     navigator.clipboard.writeText(textoCopiar); //Copiamos el contenido de la variable al portapapeles
-    alert("El texto se ha copiado al portapapeles"); // lanzamos una alerta al usuario para informarle
+    swal.fire({
+        title: "Texto Copiado",
+        text: "Su texto fue copiado en el portapapeles",
+        timer: 1300,
+        showConfirmButton: false
+    });
+
 });
