@@ -31,3 +31,66 @@ header{
     color: rgb(230,222,0,.75);
     margin-left: 5px;
 }
+
+
+
+/* Aqui empieza el estilo del footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    max-height: 15%;
+
+}
+
+.boxLogos{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    flex: auto;
+}
+
+.logoFooter{
+    flex: auto;
+    width: 30%;
+    height: 40%;
+    margin: 10px;
+}
+
+.slogan{
+    display: inline-block;
+    width: 45%;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    top: 30%;
+    left: 2rem;
+    height: 2rem;
+    flex: auto;
+}
+
+.infoFooter{
+    display: flex;
+    width: 10%;
+    font-size: 1.5rem;
+    color: white;
+    flex: auto;
+    align-items: center;
+    padding-left: 6%;
+}
+
+.redes{
+    width: 15%;
+    flex: auto;
+    position: relative;
+    right: 0%;
+    padding-left: 5%;
+}
+
+.sigueme{
+    color: white;
+    font-size: 1rem;
+    
+}
+
