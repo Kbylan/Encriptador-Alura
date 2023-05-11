@@ -26,24 +26,32 @@
 
         <main>
 
-            <textarea id="areaTexto" rows="10" cols="30" placeholder="Escriba su texto aqui"></textarea>
-            <div class="botonesAreaTexto">
+            <div class="contenedor">
 
-                <button id="botonEncriptar">Encriptar</button>
-                <button id="botonDesencriptar">Desencriptar</button>
-                <button id="botonBorrarAT">Borrar</button>
+                <div class="lado-izquierdo">
 
-            </div>
-            <select class="seleccionEncriptado">
+                    <textarea id="areaTexto" class="area-izquierda"  placeholder="Escriba su texto aqui"></textarea>
+                    <div class="botonesAreaTexto">
 
-                <option value="alura">Encriptado Alura</option>
+                        <button id="botonEncriptar">Encriptar</button>
+                        <button id="botonDesencriptar">Desencriptar</button>
+                        <button id="botonBorrarAT">Borrar</button>
 
-            </select>
-            <textarea id="areaResultado" rows="10" cols="30" disabled></textarea>
-            <div class="botonesAreaResultado">
+                    </div>
 
-                <button id="botonCopiar">Copiar</button>
-                <button id="botonBorrarR">Borrar</button>
+                </div>
+
+                <div class="lado-derecho">
+
+                    <textarea id="areaResultado" class="area-derecha" rows="30" cols="55" readonly></textarea>
+                    <div class="botonesAreaResultado">
+
+                        <button id="botonCopiar">Copiar</button>
+                        <button id="botonBorrarR">Borrar</button>
+
+                    </div>
+
+                </div>
 
             </div>
 
