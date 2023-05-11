@@ -1,12 +1,8 @@
-#background{
+body {
     background-image: url(Imagenes/background.svg);
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
+    background-position: left center;
 }
 
 header{
