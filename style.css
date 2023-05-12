@@ -55,7 +55,7 @@ header{
 
 .area-derecha {
     align-self: flex-end;
-    width: 30vw;
+    width: 40vw;
     height: 60vh;
     border-radius: 20px;
     padding: 1rem;
@@ -66,6 +66,45 @@ header{
     font-weight: bold;
 }
 
+.botonesAreaTexto {
+    margin-left: 18vw;
+}
+
+.botonesAreaResultado {
+    margin-left: 28vw;
+}
+
+.boton-normal {
+    background-color: rgb(232,225,25,0.95);
+    width: 10vw;
+    height: 8vh;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    margin-top: 2vh;
+    box-shadow: 0 0 10px rgb(232,225,25,0.95);
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.boton-borrar {
+    background-color: rgb(255,0,0,0.80);
+    color: rgb(0,0,0,0.80);
+    width: 4vw;
+    height: 8vh;
+    border-radius: 8px;
+    background-image: url(Imagenes/trash-can-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4vw 4vh;
+    padding: 18px;
+    box-shadow: 0 0 5px rgb(255,0,0,0.80);
+    opacity: 0.8;
+
+}
+
+
+
 
 
 
@@ -75,6 +114,7 @@ header{
 footer{
     display: flex;
     height: 13vh;
+    flex-wrap: nowrap;
 
 }
 
